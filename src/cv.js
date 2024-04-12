@@ -5,7 +5,7 @@ import Main from './components/main/main';
 
 function Cv (){
     return (
-      <div className="Cv">
+      <div className='Cv'>
         <Header />
         <Main />
       </div> 
