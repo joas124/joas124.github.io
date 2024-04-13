@@ -18,6 +18,6 @@ body.dark-mode .Header{
     background-color: #222;
 }
 
-body.dark-mode .Header .nameDiv h3{
+body.dark-mode .Header .nameDiv h2{
     color: #f4f4f4;
 }

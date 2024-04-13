@@ -5,13 +5,13 @@ import Main from './components/main/main';
 
 function Cv (){
   const [language, setLanguage] = useState('english');
-
-    return (
-      <div className='Cv'>
-        <Header language={language} setLanguage={setLanguage}/>
-        <Main language={language} />
-      </div> 
-    );
+  const [darkMode, setDarkMode] = useState('false');
+  return (
+    <div className='Cv'>
+      <Header language={language} setLanguage={setLanguage} darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Main language={language} darkMode={darkMode} />
+    </div> 
+  );
 }
 
 export default Cv;

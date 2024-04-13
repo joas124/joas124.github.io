@@ -3,7 +3,7 @@ import React from 'react';
 
 function Photo(){
   return (
-    <img src = './foto.png' alt = "Joás' Photo" className='Photo'/>
+    <img src = './foto.png' alt = "Joás" className='Photo'/>
   );
 }
 
