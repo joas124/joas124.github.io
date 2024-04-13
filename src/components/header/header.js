@@ -1,5 +1,5 @@
 import './header.css';
-import React, {useState} from 'react';
+import React from 'react';
 import Photo from '../photo/photo';
 
 function Header({language, setLanguage, darkMode, setDarkMode}){

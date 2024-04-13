@@ -55,15 +55,15 @@ function Qualifications({language, darkMode}){
     <div className='Qualifications'>
       <ul className='socials'>
         <li>
-          <img src='./In-Blue-128@2x.png' className='icon' />
+          <img src='./In-Blue-128@2x.png' className='icon' alt='Linkedin Logo'/>
           <a href='http://linkedin.com/in/joas124'>http://linkedin.com/in/joas124</a>
         </li>
         <li>
-          <img src={githubIcon} className='icon' />
+          <img src={githubIcon} className='icon' alt='GitHub Logo' />
           <a href='https://github.com/joas124'>https://github.com/joas124</a>
         </li>
         <li>
-          <img src='./simplemail.svg' className='icon' />
+          <img src='./simplemail.svg' className='icon' alt='Vector drawing of a letter, representing an e-mail address' />
           <a href='mailto:joasdavi16@gmail.com'>joasdavi16@gmail.com</a>
         </li>
       </ul>
