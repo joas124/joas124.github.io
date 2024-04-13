@@ -1,11 +1,9 @@
 import './photo.css'
 import React from 'react';
 
-const Photo = (props) =>{
+function Photo(){
   return (
-    <div className='divFoto'>
-      <img src = './foto.png' alt = "Joás' Photo" className='Photo'/>
-    </div>
+    <img src = './foto.png' alt = "Joás' Photo" className='Photo'/>
   );
 }
 

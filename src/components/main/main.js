@@ -1,16 +1,13 @@
 import './main.css';
-import React, {useState} from 'react';
+import React from 'react';
+import Experience from '../experience/experience';
+import Qualifications from '../qualifications_skills/qualifications';
 
-const Main = (props) =>{
-  const [language, setLanguage] = useState('portuguese');
-
+function Main({language}){
   return (
     <main className='Cv-main'>
-      <label for='language'> Select a language: </label>
-      <select name='language' value={language} onChange={(e) => setLanguage(e.target.value)}>
-        <option value='portuguese'>Português</option>
-        <option value='english'>English</option>
-      </select>
+      <Qualifications language={language} />
+      <Experience language={language} />
     </main>
   );
 }
