@@ -5,12 +5,7 @@
   color: white;
   border-bottom: solid;
   border-color: #278AD2;
-}
-
-.langSelect{
-  margin-right: 10px;
-  margin-left: 10px;
-  font-size: 0.85rem;
+  width: 80rem;
 }
 
 .nameDiv{
@@ -28,6 +23,7 @@
   font-weight: 400;
   line-height: normal;
   margin-top: 20px;
+  margin-bottom: 2rem;
 }
 
 .description{
@@ -37,12 +33,51 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: -20px;
-  width: 50%;
+  margin: 0 0 3rem 0;
+  width: 35rem;
 }
 
 .buttons{
+  display: flex;
   margin-top: 10px;
   margin-right: 30px;
-  align-self: flex-end;
+}
+
+.print{
+  display: flex;
+  align-items: center;
+  background-color: #278AD2;
+  color: #FFF;
+  border: #000;
+  border-radius: 5%;
+  font-size: 1rem;
+  cursor: pointer;
+
+}
+
+.langSelect{
+  background-color: #278AD2;
+  color: #FFF;
+  border: #000;
+  border-radius: 5%;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.dmButton{
+  background-color: #278AD2;
+  color: #FFF;
+  border: #000;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+@media print{
+  .buttons{
+    visibility: hidden;
+  }
 }

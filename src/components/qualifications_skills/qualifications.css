@@ -3,6 +3,7 @@
   width: 50rem;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 1.5rem;
   border-right: solid;
   border-color: #278AD2;
   border-width: 0.1rem;

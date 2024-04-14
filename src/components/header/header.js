@@ -2,6 +2,7 @@ import './header.css';
 import React from 'react';
 import Photo from '../photo/photo';
 
+
 function Header({language, setLanguage, darkMode, setDarkMode}){
 
   const handleDarkMode = () => {
@@ -22,16 +23,19 @@ function Header({language, setLanguage, darkMode, setDarkMode}){
     <header className='Header'>
       <Photo />
       <div className='nameDiv'>
-        <div className='buttons'>
-          <button className='print' onClick={() => console.log('TODO: Imprimir')}>{print}</button>
-          <select className='langSelect' name='language' value={language} onChange={(e) => setLanguage(e.target.value)}>
-            <option value='english'>English</option>
-            <option value='portuguese'>Português</option>
-          </select>
-          <button className='dmButton' onClick={handleDarkMode}>DM</button>
-        </div>
         <h1 className='name'>Joás Silva</h1>
         <h2 className='description'>{description}</h2>
+      </div>
+      <div className='buttons'>
+        <button className='print' onClick={() => window.print()}>
+          {print}
+          <img src='printer1.svg' alt='Printer Icon'/>
+        </button>
+        <select className='langSelect' name='language' value={language} onChange={(e) => setLanguage(e.target.value)}>
+          <option value='english'>English</option>
+          <option value='portuguese'>Português</option>
+        </select>
+        <button className='dmButton' onClick={handleDarkMode}><img alt='Dark Mode Button' src={darkMode ? './moon-stars-fill.svg' : './brightness-high-fill.svg'}/></button>
       </div>
     </header>
   );

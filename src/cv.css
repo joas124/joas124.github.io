@@ -1,6 +1,5 @@
 .cv{
     width: 100%;
-    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
@@ -20,4 +19,10 @@ body.dark-mode .Header{
 
 body.dark-mode .Header .nameDiv h2{
     color: #f4f4f4;
+}
+
+@media print{
+    @page {
+        size: A4;
+    }
 }
