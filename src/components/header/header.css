@@ -3,6 +3,8 @@
   justify-content: space-between;
   align-items:flex-start;
   color: white;
+  border-bottom: solid;
+  border-color: #278AD2;
 }
 
 .langSelect{

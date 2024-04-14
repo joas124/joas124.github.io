@@ -1,16 +1,17 @@
 .Qualifications{
   display: flex;
-  width: 40%;
+  width: 50rem;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 1rem;
-
+  border-right: solid;
+  border-color: #278AD2;
+  border-width: 0.1rem;
 }
 
 .skills{
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin-right: 2rem;
 }
 
 .title{
@@ -21,6 +22,11 @@
   font-weight: 400;
   line-height: normal; 
   text-align: center;
+}
+
+.subTitle{
+  margin-left: 1rem;
+  font-size: 1.3rem;
 }
 
 li{
@@ -46,6 +52,9 @@ a:visited{
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  font-size: 1.3rem;
+  width: 20rem;
+  margin-right: 2rem;
 }
 
 .icon{

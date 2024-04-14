@@ -67,19 +67,19 @@ function Qualifications({language, darkMode}){
           <a href='mailto:joasdavi16@gmail.com'>joasdavi16@gmail.com</a>
         </li>
       </ul>
-      <h2 className='title'>{skillsText}</h2>
+      <h3 className='title'>{skillsText}</h3>
       <div className='skills'>
-        <h3 className='subTitle'>Backend</h3>
+        <h4 className='subTitle'>Backend</h4>
         <SkillBar skills={skillsBackend} colors={colors} symbolColor={symbolColor} height={'20px'} animationDuration={'1500'} />
-        <h3 className='subTitle'>Frontend</h3>
+        <h4 className='subTitle'>Frontend</h4>
         <SkillBar skills={skillsFrontend} colors={colors} symbolColor={symbolColor} height={'20px'} animationDuration={'1500'} />
-        <h3 className='subTitle'>{oop}</h3>
+        <h4 className='subTitle'>{oop}</h4>
         <SkillBar skills={skillsOOP} colors={colors} symbolColor={symbolColor} height={'20px'} animationDuration={'1500'} />
       </div>
-      <h2 className='title'>{languages}</h2>
+      <h3 className='title'>{languages}</h3>
       <div className='languages'>
-        <h3 className='subTitle'>{pt}</h3>
-        <h3 className='subTitle'>{en}</h3>
+        <h4 className='subTitle'>{pt}</h4>
+        <h4 className='subTitle'>{en}</h4>
       </div>
     </div>
   );

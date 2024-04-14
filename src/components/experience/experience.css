@@ -1,0 +1,78 @@
+.Experience{
+  width: 150rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0 0 20px;
+}
+
+.degreeInfo{
+  white-space: pre-wrap;
+}
+
+.history{
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.divHistory{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-self: flex-start;
+  margin-left: 5rem;
+}
+
+.study{
+  margin-left: 2rem;
+}
+
+.study h4{
+  font-family: "Red Hat Text";
+  font-size: 1.25rem;
+  font-weight: 750;
+  line-height: normal;
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.study p{
+  font-family: "Red Hat Text";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  white-space: pre-wrap;
+  width: 75%;
+}
+
+.list-accomp{
+  list-style-type: disc;
+  width: 40rem;
+}
+
+.certificate-p {
+  cursor: pointer;
+  display: list-item;
+  font-family: "Red Hat Text";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: normal;
+  white-space: pre-wrap;
+  width: 75%;
+  
+}
+
+.certificate-p:hover{
+  color: #278AD2;
+}
+
+.ucLogo{
+  width: 10rem;
+  height: 10rem;
+}
+
+.esfrlLogo{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
