@@ -1,9 +1,8 @@
 .Experience{
-  width: 150rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 0 0 20px;
+  padding: 10px 0 0 20px;
 }
 
 .source{
@@ -12,7 +11,23 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-  margin: 0 0 2rem 5rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.source a:visited{
+  text-decoration: none;
+  color: #278AD2;
+}
+
+.source a:link{
+  text-decoration: none;
+  color: #278AD2;
+}
+
+.source a:hover{
+  text-decoration: none;
+  color: #9127a9;
 }
 
 .degreeInfo{
@@ -29,11 +44,11 @@
   flex-direction: column;
   align-content: center;
   align-self: center;
-  margin-left: 5rem;
+  padding-left: 5rem;
 }
 
 .study{
-  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
 .study h4{
@@ -55,8 +70,9 @@
 }
 
 .list-accomp{
+  display: inline-block;
   list-style-type: disc;
-  width: 40rem;
+  width: 70%;
 }
 
 .certificate-p {
@@ -67,7 +83,7 @@
   font-weight: 400;
   line-height: normal;
   white-space: pre-wrap;
-  width: 75%;
+  width: 100%;
   
 }
 
@@ -76,12 +92,30 @@
 }
 
 .ucLogo{
-  width: 10rem;
-  height: 10rem;
+  width: 150px;
+  height: 150px;
 }
 
 .esfrlLogo{
-  width: 10rem;
-  height: 10rem;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+}
+
+@media only screen and (max-width: 768px){
+  .Experience{
+    width: 100%;
+    border-right: none;
+    border-bottom: solid;
+    border-color: #278AD2;
+    padding: 0;
+  }
+
+  .divHistory{
+    padding-left: 0;
+  }
+
+  .source{
+    padding-top: 2rem;
+  }
 }

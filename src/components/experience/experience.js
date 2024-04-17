@@ -59,10 +59,10 @@ function Experience({language}){
       </ul>
       <div className='source'>
         <div className='link'>
-          {hosted}<a href='https://joas124.github.io/'>https://joas124.github.io/</a>
+          {hosted} <a href='https://joas124.github.io/'>https://joas124.github.io/</a>
         </div>
         <div className='link'>
-          {source}<a href='https://github.com/joas124/CV'>https://github.com/joas124/CV</a>
+          {source} <a href='https://github.com/joas124/CV'>https://github.com/joas124/CV</a>
         </div>
       </div>
     </div>

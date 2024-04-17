@@ -21,11 +21,6 @@ function Header({language, setLanguage, darkMode, setDarkMode}){
   }
   return (
     <header className='Header'>
-      <Photo />
-      <div className='nameDiv'>
-        <h1 className='name'>Joás Silva</h1>
-        <h2 className='description'>{description}</h2>
-      </div>
       <div className='buttons'>
         <button className='print' onClick={() => window.print()}>
           {print}
@@ -36,6 +31,13 @@ function Header({language, setLanguage, darkMode, setDarkMode}){
           <option value='portuguese'>Português</option>
         </select>
         <button className='dmButton' onClick={handleDarkMode}><img alt='Dark Mode Button' src={darkMode ? './moon-stars-fill.svg' : './brightness-high-fill.svg'}/></button>
+      </div>
+      <div className='namePhoto'>
+        <Photo />
+        <div className='nameDiv'>
+          <h1 className='name'>Joás Silva</h1>
+          <h2 className='description'>{description}</h2>
+        </div>
       </div>
     </header>
   );

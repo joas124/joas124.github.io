@@ -1,18 +1,18 @@
 .Qualifications{
   display: flex;
-  width: 50rem;
   flex-direction: column;
-  justify-content: space-between;
-  margin-left: 1.5rem;
+  align-self: flex-start;
+  padding-left: 1.5rem;
   border-right: solid;
   border-color: #278AD2;
   border-width: 0.1rem;
 }
 
+
 .skills{
   display: flex;
   flex-direction: column;
-  margin-right: 2rem;
+  padding-right: 2rem;
 }
 
 .title{
@@ -35,30 +35,49 @@ li{
   margin-top: 0.5rem;
 }
 
-a{
-  margin-left: 0.5rem;
+
+.socials a{
+  padding-left: 0.5rem;
 }
 
-a:link{
+.socials a:link{
   text-decoration: none;
   color: #278AD2;
 }
 
-a:visited{
+.socials a:visited{
   text-decoration: none;
   color: #278AD2;
+}
+
+.socials a:hover{
+  text-decoration: none;
+  color: #9127a9;
+
 }
 
 .socials{
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  align-self: center;
   font-size: 1.3rem;
-  width: 20rem;
-  margin-right: 2rem;
+  padding: 0;
 }
+
 
 .icon{
   vertical-align: middle;
   width: 30px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 768px){
+  .Qualifications{
+    width: 100%;
+    border-right: none;
+    border-bottom: solid;
+    border-color: #278AD2;
+    padding: 0;
+  }
 }
