@@ -72,7 +72,7 @@ li{
   height: 30px;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-aspect-ratio: 3/4){
   .Qualifications{
     width: 100%;
     border-right: none;

@@ -95,7 +95,7 @@
   }
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-aspect-ratio: 3/4){
   .buttons{
     margin-bottom: 2rem;
   }
