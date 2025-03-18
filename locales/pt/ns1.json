@@ -1,0 +1,20 @@
+{
+    "print": "Imprimir",
+    "jobTitle": "Full-time Web Developer @ MEO.",
+    "description": "Strong programming skills, knowledgeble in IP networks, database management and Dockerization. Eager to learn and contribute to real-world projects.",
+    "history": "Histórico de Estudo",
+    "accomplishments": "Accomplishments",
+    "degree":{
+        "title": "Bachelor's Degree in Informatics Engineering (Computer Science)",
+        "info": "Institution: University of Coimbra - FCTUC\n[2021-2024]"
+    },
+    "secondary": {
+        "title": "Secondary School Certificate",
+        "info": "Course: Science and Technology\nInstitution: Francisco Rodrigues Lobo Secondary School\n[2018-2021]"
+    },
+    "enei": "Participant in the 2023 edition of ENEI (National Meeting of Computer Science Students)",
+    "ebec": "Member of the team that placed 3rd at EBEC - European BEST Engineering Competition, on March of 2022",
+    "hosted": "This curriculum is hosted on:",
+    "source": "Source code:"
+
+}
