@@ -1,54 +1,13 @@
-.Experience{
+.history {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  padding: 10px 0 0 20px;
-}
-
-.source{
-  display: flex;
-  justify-content: end;
-  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  height: 100%;
-  align-items: center;
-  padding-bottom: 2rem;
-}
-
-.source a:visited{
-  text-decoration: none;
-  color: #278AD2;
-}
-
-.source a:link{
-  text-decoration: none;
-  color: #278AD2;
-}
-
-.source a:hover{
-  text-decoration: none;
-  color: #9127a9;
-}
-
-.degreeInfo{
-  white-space: pre-wrap;
-}
-
-.history{
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.divHistory{
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  align-self: center;
-  padding-left: 5rem;
 }
 
 .study{
   padding-left: 2rem;
+  width: 60%;
 }
 
 .study h4{
@@ -66,56 +25,17 @@
   font-weight: 400;
   line-height: normal;
   white-space: pre-wrap;
-  width: 75%;
+  /* width: 75%; */
 }
 
-.list-accomp{
-  display: inline-block;
-  list-style-type: disc;
-  width: 70%;
+.logo, .logo-rounded{
+  max-width: 130px;
+  max-height: 130px;
+  width: 10vw;
+  height: 10vw;
+  object-fit: cover;
 }
 
-.certificate-p {
-  cursor: pointer;
-  display: list-item;
-  font-family: "Red Hat Text";
-  font-size: 1.3rem;
-  font-weight: 400;
-  line-height: normal;
-  white-space: pre-wrap;
-  width: 100%;
-  
-}
-
-.certificate-p:hover{
-  color: #278AD2;
-}
-
-.ucLogo{
-  width: 150px;
-  height: 150px;
-}
-
-.esfrlLogo{
-  width: 150px;
-  height: 150px;
+.logo-rounded{
   border-radius: 50%;
-}
-
-@media only screen and (max-aspect-ratio: 3/4){
-  .Experience{
-    width: 100%;
-    border-right: none;
-    border-bottom: solid;
-    border-color: #278AD2;
-    padding: 0;
-  }
-
-  .divHistory{
-    padding-left: 0;
-  }
-
-  .source{
-    padding-top: 2rem;
-  }
 }
