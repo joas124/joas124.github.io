@@ -41,10 +41,12 @@ function Accomplishments(){
       </ul>
       <div className='source'>
         <div className='link'>
-          <p>{t('hosted')} <a href='https://joas124.github.io/'>https://joas124.github.io/</a></p>
+          <p>{t('hosted')}</p>
+          <a href='https://joas124.github.io/'>https://joas124.github.io/</a>
         </div>
         <div className='link'>
-          <p>{t('source')} <a href='https://github.com/joas124/CV'>https://github.com/joas124/CV</a></p>
+          <p>{t('source')}</p>
+          <a href='https://github.com/joas124/CV'>https://github.com/joas124/CV</a>
         </div>
       </div>
     </div>

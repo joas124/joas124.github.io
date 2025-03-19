@@ -30,7 +30,7 @@ function Qualifications({darkMode}: {darkMode: boolean}){
       <ul className='socials'>
         <li>
           <img src='./icons/In-Blue-128@2x.png' className='icon' alt='Linkedin Logo'/>
-          <a href='http://linkedin.com/in/joas124'>http://linkedin.com/in/joas124</a>
+          <a href='https://linkedin.com/in/joas124'>https://linkedin.com/in/joas124</a>
         </li>
         <li>
           <img src={darkMode ? './icons/github-mark-white.svg' : './icons/github-mark.svg'} className='icon' alt='GitHub Logo' />
