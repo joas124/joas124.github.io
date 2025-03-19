@@ -16,6 +16,15 @@
   padding: 0 0 2rem 0;
 }
 
+.source .link{
+  display: flex;
+  text-align: center;
+}
+
+.source .link p{
+  margin: 0;
+}
+
 .source a:visited{
   text-decoration: none;
   color: #278AD2;

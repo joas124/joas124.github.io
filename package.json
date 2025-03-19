@@ -1,12 +1,12 @@
 {
-  "name": "CV",
+  "name": "cv",
   "private": true,
   "version": "0.2.0",
   "homepage": "https://joas124.github.io/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
