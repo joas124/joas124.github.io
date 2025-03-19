@@ -33,4 +33,10 @@ body.dark-mode .Header .nameDiv h2{
     @page {
         size: A3;
     }
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
 }

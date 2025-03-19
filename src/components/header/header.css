@@ -83,11 +83,10 @@
 .langSelect{
   background-color: #278AD2;
   color: #FFF;
-  border: #000;
-  border-radius: 5%;
   margin-right: 10px;
   margin-left: 10px;
   font-size: 1rem;
+  border-radius: 5%;
   cursor: pointer;
 }
 
@@ -103,11 +102,11 @@
 
 @media print{
   .buttons{
-    visibility: hidden;
+    display: none;
   }
 }
 
-@media only screen and (max-aspect-ratio: 3/4){
+@media only screen and (max-aspect-ratio: 1){
   .buttons{
     margin-bottom: 2rem;
   }

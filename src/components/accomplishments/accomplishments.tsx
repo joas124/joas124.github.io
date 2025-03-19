@@ -16,7 +16,6 @@ function Accomplishments(){
 
   const education = [
     {img: './images/FCTUC_V_FundoClaro.png', imgClass: 'logo', imgAlt: 'Logo of the University of Coimbra', title: t('degree.title'), description: t('degree.info')},
-    {img: './images/logoESFRL.jpg', imgClass: 'logo-rounded', imgAlt: 'Logo of the Francisco Rodrigues Lobo Secondary School', title: t('secondary.title'), description: t('secondary.info')},
   ]
     
   return(
