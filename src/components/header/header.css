@@ -91,6 +91,9 @@
 }
 
 .dmButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #278AD2;
   color: #FFF;
   border: #000;

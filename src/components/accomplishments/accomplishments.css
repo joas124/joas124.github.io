@@ -108,11 +108,11 @@
     padding-left: 0;
   }
 
-  /* .list-accomp{
-    padding: 0;
-  } */
-
   .certificate-p{
     font-size: 1rem;
+  }
+
+  .list-accomp{
+    padding: 0 0 5rem 0;
   }
 }

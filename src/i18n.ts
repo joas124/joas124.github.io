@@ -8,6 +8,7 @@ i18next
   .use(initReactI18next)
   .use(HttpApi)
   .init({
+    load: 'languageOnly',
     debug: false,
     fallbackLng: 'en',
     defaultNS,
