@@ -1,36 +1,27 @@
 {
   "name": "cv",
+  "version": "0.3.0",
   "private": true,
-  "version": "0.2.0",
-  "homepage": "https://joas124.github.io/",
-  "type": "module",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "i18next": "^24.2.3",
-    "i18next-http-backend": "^3.0.2",
+    "cookies-next": "^5.1.0",
+    "next": "15.2.3",
+    "next-intl": "^4.0.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-i18next": "^15.4.1"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
-    "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.21.0",
-    "eslint-plugin-react-hooks": "^5.1.0",
-    "eslint-plugin-react-refresh": "^0.4.19",
-    "gh-pages": "^6.3.0",
-    "globals": "^15.15.0",
-    "typescript": "~5.7.2",
-    "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0"
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.3",
+    "typescript": "^5"
   }
 }

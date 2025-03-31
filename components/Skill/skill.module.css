@@ -1,0 +1,57 @@
+.skillContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8px 0;
+  }
+  
+  .skillTitle {
+    font-weight: 350;
+    font-size: 1.25rem;
+  }
+  
+  .proficiencyDiv {
+    display: flex;
+    gap: 0.3rem;
+  }
+  
+  .circleWrapper {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+  
+  .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  .circle.empty {
+    border: 1px solid #aaa;
+    background-color: transparent;
+  }
+  
+  .circle.filled {
+    background-color: #3b82f6;
+    border: 1px solid #3b82f6;
+  }
+  
+  .circle.halfFilled {
+    overflow: hidden;
+    border: 1px solid #aaa;
+  }
+  
+  .circle.halfFilled::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #3b82f6;
+  }

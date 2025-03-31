@@ -1,0 +1,120 @@
+.Accomplishments{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0 0 0;
+}
+
+.source{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0 2rem 0;
+}
+
+.source .link{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.source .link p{
+  margin: 0;
+}
+
+.source a:visited{
+  text-decoration: none;
+  color: #278AD2;
+}
+
+.source a:link{
+  text-decoration: none;
+  color: #278AD2;
+}
+
+.source a:hover{
+  text-decoration: none;
+  color: #9127a9;
+}
+
+.degreeInfo{
+  white-space: pre-wrap;
+}
+
+.divHistory{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.listAccomp{
+  display: inline-block;
+  list-style-type: disc;
+  width: 60%;
+  padding: 0 0 10rem 0;
+}
+
+.certificateP {
+  cursor: pointer;
+  display: list-item;
+  font-family: var(--font-red-hat-text);
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: normal;
+  white-space: pre-wrap;
+  width: 100%;
+  
+}
+
+.certificateP:hover{
+  color: #278AD2;
+}
+
+.ucLogo{
+  width: 150px;
+  height: 150px;
+}
+
+.esfrlLogo{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+@media only screen and (max-aspect-ratio: 1){
+  .Experience{
+    width: 100%;
+    border-right: none;
+    border-bottom: solid;
+    border-color: #278AD2;
+    padding: 0;
+  }
+
+  .divHistory{
+    padding-left: 0;
+  }
+
+  .source{
+    padding-top: 2rem;
+  }
+}
+
+@media print{
+  .divHistory{
+    padding-left: 0;
+  }
+
+  .certificate-p{
+    font-size: 1rem;
+  }
+
+  .listAccomp{
+    padding: 0 0 5rem 0;
+  }
+}

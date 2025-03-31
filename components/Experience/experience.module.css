@@ -1,0 +1,55 @@
+.history {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.study{
+  padding-left: 2rem;
+  width: 50%;
+}
+
+.study h4{
+  font-family: var(--font-red-hat-text);
+  font-size: 1.25rem;
+  font-weight: 750;
+  line-height: normal;
+  width: 75%;
+  margin-bottom: 0;
+}
+
+.study p{
+  font-family: var(--font-red-hat-text);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  white-space: pre-wrap;
+}
+
+.logo, .logo-rounded{
+  max-width: 130px;
+  max-height: 130px;
+  width: 50vw;
+  height: 50vw;
+  object-fit: cover;
+}
+
+.logo-rounded{
+  border-radius: 50%;
+}
+
+.study a:link{
+  text-decoration: none;
+  color: #278AD2;
+}
+
+.study a:visited{
+  text-decoration: none;
+  color: #278AD2;
+}
+
+.study a:hover{
+  text-decoration: none;
+  color: #9127a9;
+}

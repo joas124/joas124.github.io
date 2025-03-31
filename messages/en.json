@@ -1,0 +1,29 @@
+{
+    "print": "Print",
+    "jobTitle": "Full Stack Web Developer @ MEO",
+    "description": "​Web Developer with expertise in both front-end and back-end development, including RESTful API integration, virtualization, and database management.",
+    "prog-langs": "Programming Languages",
+    "skills": "Relevant Skills",
+    "languages": "Languages",
+    "pt": "Portuguese - Native",
+    "en": "English - Fluent",
+    "experience": "Work Experience",
+    "history": "Education History",
+    "accomplishments": "Accomplishments",
+    "meo":{
+        "title": "Full Stack Web Developer Intern @ MEO",
+        "info": "Traineeship focused mostly on Web Development in Laravel, developing features/audits to a Portal for the Operations team at MEO. Also managed databases, and implemented virtualization with ProxmoxVE and Docker.\n[September 2024-Current]"
+    },
+    "redlight":{
+        "title": "Web Development Summer Intern @ RedLight Software",
+        "info": "Summer internship focused on Web Development with the objective to create a <link>website/game for a social solidarity institution</link>.\n[June-August 2024]"
+    },
+    "degree":{
+        "title": "Bachelor's Degree in Informatics Engineering (Computer Science)",
+        "info": "Institution: University of Coimbra - FCTUC\n[2021-2024]"
+    },
+    "enei": "Participant in the 2023 edition of ENEI (National Meeting of Computer Science Students)",
+    "ebec": "Member of the team that placed 3rd at EBEC - European BEST Engineering Competition, on March of 2022",
+    "hosted": "This curriculum is hosted on:",
+    "source": "Source code:"
+}
