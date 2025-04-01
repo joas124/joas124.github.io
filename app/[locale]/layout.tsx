@@ -39,10 +39,9 @@ export default async function LocaleLayout({
   try {
     messages = await import(`../../messages/${locale}.json`).then((mod) => mod.default);
   } catch (error) {
+    
     redirect(`/${defaultLocale}`);
   }  
-
-  console.log(`Messages: ${messages}`);
 
   return (
     <html lang={locale} className={`${rubikMonoOne.variable} ${redHatText.variable}`}>
