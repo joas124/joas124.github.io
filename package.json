@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "next build && echo .> ./out/.nojekyll", 
-    "deploy": "gh-pages -d out"
+    "predeploy": "next build", 
+    "deploy": "gh-pages -d out --nojekyll --cname joas124.github.io"
   },
   "dependencies": {
     "cookies-next": "^5.1.0",
