@@ -1,13 +1,15 @@
+'use client';
+
 import Image from 'next/image';
 import Skill from '../Skill';
 import GithubIcon from './GithubIcon';
 import styles from './qualifications.module.css';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 
-export default async function Qualifications(){
+export default function Qualifications(){
   //Translation variables
-  const t = await getTranslations();  
+  const t = useTranslations();  
   //SkillBars
   const skillsBackend = [
     { title: 'Laravel (PHP)', proficiency: 4.5 },

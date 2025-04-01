@@ -2,7 +2,11 @@ import type { NextConfig } from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+  output: "export",
 };
 
 const withNextIntl = createNextIntlPlugin();

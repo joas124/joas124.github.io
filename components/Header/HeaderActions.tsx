@@ -1,28 +1,21 @@
 'use client'
 
 import { useDarkMode } from '@/app/context/DarkModeContext';
-import { useRouter } from 'next/navigation';
-import { useTranslations } from 'next-intl';
-import { setCookie, getCookie } from 'cookies-next';
+import { useTranslations, useLocale } from 'next-intl';
 import styles from './header.module.css';
 import Image from 'next/image';
+import {useRouter} from '@/i18n/navigation';
 import React from 'react';
 
 export default function HeaderActions() {
   const t = useTranslations();
   const router = useRouter();
-  const [locale, setLocale] = React.useState(() => {
-    const lang = getCookie("LANGUAGE");
-    return typeof lang === "string" ? lang : "en";
-  });
-  
+  const locale = useLocale(); 
   const {darkMode, toggleDarkMode} = useDarkMode();
 
 
   const handleLanguageChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
-    setCookie("LANGUAGE", event.target.value);
-    setLocale(event.target.value);
-    router.refresh();
+    router.push(event.target.value);
   };
 
   return (

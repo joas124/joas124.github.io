@@ -1,12 +1,14 @@
+'use client';
+
 import styles from './header.module.css';
 import Image from 'next/image';
-import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 import HeaderActions from './HeaderActions';
 
 
 
-export default async function Header() {
-  const t = await getTranslations();
+export default function Header() {
+  const t = useTranslations();
 
   return (
     <header className='Header'>
