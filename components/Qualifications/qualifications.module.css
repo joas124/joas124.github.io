@@ -67,7 +67,7 @@
     padding: 0 2rem 0 2rem;
 }
 
-@media only screen and (max-aspect-ratio: 1){
+@media only screen and (max-aspect-ratio: 1), (max-width: 650px){
   .Qualifications{
     width: 100%;
     border-right: none;

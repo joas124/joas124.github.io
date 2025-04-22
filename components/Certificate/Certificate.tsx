@@ -19,8 +19,7 @@ export default function Certificate({on, certificate, certificateAlt, close, wid
       <div className={`${styles.certificateInner} ${styles.animated}`}
            onClick={(e) => e.stopPropagation()}>
         <button className={styles.close} onClick={() => close(false)}>X</button>
-        <Image width={width} height={heigth} className={styles.image} src={certificate} alt={certificateAlt} />
-        {/* <img src={certificate} alt={certificateAlt} /> */}
+        <Image priority width={width} height={heigth} className={styles.image} src={certificate} alt={certificateAlt} />
       </div>
     </div>
   );

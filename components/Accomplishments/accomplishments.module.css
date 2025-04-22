@@ -87,7 +87,7 @@
   border-radius: 50%;
 }
 
-@media only screen and (max-aspect-ratio: 1){
+@media only screen and (max-aspect-ratio: 1), (max-width: 650px){
   .Experience{
     width: 100%;
     border-right: none;
