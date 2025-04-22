@@ -46,7 +46,6 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={`${rubikMonoOne.variable} ${redHatText.variable}`}>
       <head>
-        <meta name="google-site-verification" content="1tb00A4qi_HgAfFeaxSJqPAhbebBR9G8GMyqyrN2XYA" />
         <meta name="theme-color" content="#000000" />
       </head>
       <body>
