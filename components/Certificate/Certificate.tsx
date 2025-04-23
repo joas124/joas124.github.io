@@ -11,7 +11,6 @@ interface CertificateProps {
 }
 
 export default function Certificate({on, certificate, certificateAlt, close, width, heigth}: CertificateProps) {
-  // Preload the image when component mounts
   if (!on) return null;
 
   return (

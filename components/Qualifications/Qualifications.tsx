@@ -1,5 +1,3 @@
-'use client';
-
 import Image from 'next/image';
 import Skill from '../Skill';
 import GithubIcon from './GithubIcon';
@@ -38,7 +36,7 @@ export default function Qualifications(){
           <a href='https://linkedin.com/in/joas124' target='_blank'>https://linkedin.com/in/joas124</a>
         </li>
         <li className={styles.links}>
-          <GithubIcon />
+          <Image src={'/icons/github-mark.svg'} width="30" height="30" className="icon github" alt='GitHub Logo' />          
           <a href='https://github.com/joas124' target='_blank'>https://github.com/joas124</a>
         </li>
         <li className={styles.links}>

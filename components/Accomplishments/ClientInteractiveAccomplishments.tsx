@@ -1,6 +1,8 @@
 'use client';
 
 import React from "react";
+import Image from 'next/image';
+
 import dynamic from 'next/dynamic';
 import styles from './accomplishments.module.css';
 
@@ -34,8 +36,8 @@ export default function ClientInteractiveAccomplishments({ certificates }: Clien
           </li>
         ))}
       </ul>
-
-      {certificates.map((certificate, index) => (
+      
+      {certificates.map((certificate, index) => (          
         <Certificate
           key={certificate.label}
           on={activeModal === index}

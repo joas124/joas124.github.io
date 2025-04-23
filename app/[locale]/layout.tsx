@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Rubik_Mono_One, Red_Hat_Text } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
-import { DarkModeProvider } from "@/app/context/DarkModeContext";
 import "../globals.css";
 import { redirect } from "next/navigation";
 
@@ -33,24 +32,25 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: Promise<{ locale: string }>;
 }>) {
-  const { locale } = await params; // Await the params promise
+  const { locale } = await params;
 
   let messages;
   try {
     messages = await import(`../../messages/${locale}.json`).then((mod) => mod.default);
   } catch (error) {
-    
     redirect(`/${defaultLocale}`);
-  }  
+  }
 
   return (
     <html lang={locale} className={`${rubikMonoOne.variable} ${redHatText.variable}`}>
       <head>
         <meta name="theme-color" content="#000000" />
+        <link rel="preload" as="image" href="/images/enei.webp" />
+        <link rel="preload" as="image" href="/images/ebec.webp" />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <DarkModeProvider>{children}</DarkModeProvider>
+          {children}
         </NextIntlClientProvider>
       </body>
     </html>
