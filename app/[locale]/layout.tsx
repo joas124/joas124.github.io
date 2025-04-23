@@ -25,7 +25,7 @@ const metadata: Metadata = {
 const SUPPORTED_LOCALES = ['en', 'pt'];
 const DEFAULT_LOCALE = 'en';
 
-export default async function RootLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
+export default async function RootLayout({ children, params }: { children: React.ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
 
    if (!SUPPORTED_LOCALES.includes(locale)) {

@@ -8,7 +8,7 @@ export function generateStaticParams() {
   return [{ locale: "en" }, { locale: "pt" }];
 }
 
-export default async function Cv({ params }: { params: { locale: string } }){
+export default async function Cv({ params }: { params: Promise<{ locale: string }> }){
   const { locale } = await params;
   const translations = getTranslation(locale);
   return (
