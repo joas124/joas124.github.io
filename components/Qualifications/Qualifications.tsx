@@ -1,13 +1,8 @@
 import Image from 'next/image';
 import Skill from '../Skill';
-import GithubIcon from './GithubIcon';
 import styles from './qualifications.module.css';
-import { useTranslations } from 'next-intl';
 
-
-export default function Qualifications(){
-  //Translation variables
-  const t = useTranslations();  
+export default function Qualifications({ translations }: { translations: Record<string, string> }){
   //SkillBars
   const skillsBackend = [
     { title: 'Laravel (PHP)', proficiency: 4.5 },
@@ -44,7 +39,7 @@ export default function Qualifications(){
           <a href='mailto:joasdavi16@gmail.com'>joasdavi16@gmail.com</a>
         </li>
       </ul>
-      <h3 className='title'>{t('skills')}</h3>
+      <h3 className='title'>{translations['skills']}</h3>
       <div className={styles.skills}>
         <h4 className={styles.subTitle}>Back-end</h4>
         {skillsBackend.map((skill) => {
@@ -54,15 +49,15 @@ export default function Qualifications(){
         {skillsFrontend.map((skill) => {
           return <Skill skill={skill} key={skill.title}/>;
         })}
-        <h4 className={styles.subTitle}>{t('prog-langs')}</h4>
+        <h4 className={styles.subTitle}>{translations['prog-langs']}</h4>
         {skillsOOP.map((skill) => {
           return <Skill skill={skill} key={skill.title}/>;
         })}
       </div>
-      <h3 className='title'>{t('languages')}</h3>
+      <h3 className='title'>{translations['languages']}</h3>
       <div className={styles.languages}>
-        <h4 className={styles.subTitle}>{t('pt')}</h4>
-        <h4 className={styles.subTitle}>{t('en')}</h4>
+        <h4 className={styles.subTitle}>{translations['pt']}</h4>
+        <h4 className={styles.subTitle}>{translations['en']}</h4>
       </div>
     </div>
   );

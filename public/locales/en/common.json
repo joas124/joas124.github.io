@@ -10,18 +10,12 @@
     "experience": "Work Experience",
     "history": "Education History",
     "accomplishments": "Accomplishments",
-    "meo":{
-        "title": "Full Stack Web Developer Intern @ MEO",
-        "info": "Traineeship focused mostly on Web Development in Laravel, developing features/audits to a Portal for the Operations team at MEO. Also managed databases, and implemented virtualization with ProxmoxVE and Docker.\n[September 2024-Current]"
-    },
-    "redlight":{
-        "title": "Web Development Summer Intern @ RedLight Software",
-        "info": "Summer internship focused on Web Development with the objective to create a <link>website/game for a social solidarity institution</link>.\n[June-August 2024]"
-    },
-    "degree":{
-        "title": "Bachelor's Degree in Informatics Engineering (Computer Science)",
-        "info": "Institution: University of Coimbra - FCTUC\n[2021-2024]"
-    },
+    "meoTitle": "Full Stack Web Developer Intern @ MEO",
+    "meoInfo": "Traineeship focused mostly on Web Development in Laravel, developing features/audits to a Portal for the Operations team at MEO. Also managed databases, and implemented virtualization with ProxmoxVE and Docker.\n[September 2024-Current]",
+    "redlightTitle": "Web Development Summer Intern @ RedLight Software",
+    "redlightInfo": "Summer internship focused on Web Development with the objective to create a <a target='_blank' href='https://redlight.dev/project/vive-na-boa/'>website/game for a social solidarity institution</a>.\n[June-August 2024]",
+    "degreeTitle": "Bachelor's Degree in Informatics Engineering (Computer Science)",
+    "degreeInfo": "Institution: University of Coimbra - FCTUC\n[2021-2024]",
     "enei": "Participant in the 2023 edition of ENEI (National Meeting of Computer Science Students)",
     "ebec": "Member of the team that placed 3rd at EBEC - European BEST Engineering Competition, on March of 2022",
     "hosted": "This curriculum is hosted on:",

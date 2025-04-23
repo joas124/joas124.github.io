@@ -1,8 +1,7 @@
-import type { Metadata } from "next";
 import { Rubik_Mono_One, Red_Hat_Text } from "next/font/google";
-import { NextIntlClientProvider } from "next-intl";
+import { redirect } from 'next/navigation'
+import { Metadata } from 'next';
 import "../globals.css";
-import { redirect } from "next/navigation";
 
 const rubikMonoOne = Rubik_Mono_One({
   weight: ["400"],
@@ -18,27 +17,19 @@ const redHatText = Red_Hat_Text({
   variable: "--font-red-hat-text",
 });
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Curriculum Vitae",
   description: "Joás Silva's Curriculum Vitae",
 };
 
-const defaultLocale = "en";
+const SUPPORTED_LOCALES = ['en', 'pt'];
+const DEFAULT_LOCALE = 'en';
 
-export default async function LocaleLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}>) {
+export default async function RootLayout({ children, params }: { children: React.ReactNode; params: { locale: string } }) {
   const { locale } = await params;
 
-  let messages;
-  try {
-    messages = await import(`../../messages/${locale}.json`).then((mod) => mod.default);
-  } catch (error) {
-    redirect(`/${defaultLocale}`);
+   if (!SUPPORTED_LOCALES.includes(locale)) {
+    redirect(`/${DEFAULT_LOCALE}`);
   }
 
   return (
@@ -49,10 +40,8 @@ export default async function LocaleLayout({
         <link rel="preload" as="image" href="/images/ebec.webp" />
       </head>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        {children}
       </body>
     </html>
-  );
+  )
 }

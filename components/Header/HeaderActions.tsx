@@ -1,19 +1,15 @@
 'use client'
-
-import { useTranslations, useLocale } from 'next-intl';
 import styles from './header.module.css';
 import Image from 'next/image';
-import {useRouter} from '@/i18n/navigation';
 import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation'
 
-export default function HeaderActions() {
-  const t = useTranslations();
+export default function HeaderActions({ translations, locale }: { translations: Record<string, string>, locale: string }) {
   const router = useRouter();
-  const locale = useLocale(); 
   const [darkMode, setDarkMode] = useState(false);
 
   const handleLanguageChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
-    router.push(event.target.value);
+    router.push(event.target.value)
   };
 
   function toggleDarkMode(){
@@ -48,7 +44,7 @@ export default function HeaderActions() {
   return (
     <div className={styles.buttons}>
       <button className={styles.print} onClick={() => window.print()}>
-        {t('print')}
+        {translations['print']}
         <Image src='./icons/printer.svg' width={30} height={30} alt='Printer Icon' />
       </button>
       <select className={styles.langSelect} name='language' value={locale} onChange={handleLanguageChange}>
