@@ -17,8 +17,8 @@ const redHatText = Red_Hat_Text({
   variable: "--font-red-hat-text",
 });
 
-const metadata: Metadata = {
-  title: "Curriculum Vitae",
+export const metadata: Metadata = {
+  title: "CV - Joás Silva",
   description: "Joás Silva's Curriculum Vitae",
 };
 
