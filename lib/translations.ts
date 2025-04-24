@@ -6,3 +6,8 @@ export function getTranslation(locale: string) {
   const json = fs.readFileSync(filePath, 'utf-8');
   return JSON.parse(json);
 }
+
+export function getLanguages() {
+  const folderPath = path.resolve(process.cwd(), `./public/locales`);
+  return fs.readdirSync(folderPath);
+}

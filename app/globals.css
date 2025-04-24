@@ -33,6 +33,20 @@ body.dark-mode{
   height: 30%;
 }
 
+.Main{
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+@media only screen and (max-aspect-ratio: 1), (max-width: 650px){
+  .Main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
 .title{
   color: #278AD2;

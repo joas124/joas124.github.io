@@ -3,13 +3,24 @@ import styles from './header.module.css';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'
+import { NavigateOptions } from 'next/dist/shared/lib/app-router-context.shared-runtime';
+
+// Known bug from nextJS, just a hack fix as to not display a type error on the router navigation options
+interface NavOptions extends NavigateOptions {
+  shallow: boolean;
+}
 
 export default function HeaderActions({ translations, locale }: { translations: Record<string, string>, locale: string }) {
   const router = useRouter();
   const [darkMode, setDarkMode] = useState(false);
 
   const handleLanguageChange = async (event: React.ChangeEvent<HTMLSelectElement>) => {
-    router.push(event.target.value)
+    const newLocale = event.target.value;
+    if (newLocale === process.env.NEXT_PUBLIC_DEFAULT_LOCALE) {
+      router.push('/', { shallow: true } as NavOptions); // Prevent full page reload
+    } else {
+      router.push(`/${newLocale}`, { shallow: true } as NavOptions);
+    }
   };
 
   function toggleDarkMode(){
