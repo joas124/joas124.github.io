@@ -93,11 +93,14 @@
 }
 
 @media only screen and (max-aspect-ratio: 1), (max-width: 650px){
+  .Accomplishments{
+    border-left: none;
+    border-top: solid;
+    border-color: #278AD2;
+  }
+  
   .Experience{
     width: 100%;
-    border-right: none;
-    border-bottom: solid;
-    border-color: #278AD2;
     padding: 0;
   }
 

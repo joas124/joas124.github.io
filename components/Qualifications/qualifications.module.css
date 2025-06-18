@@ -69,9 +69,6 @@
 @media only screen and (max-aspect-ratio: 1), (max-width: 650px){
   .Qualifications{
     width: 100%;
-    border-right: none;
-    border-bottom: solid;
-    border-color: #278AD2;
     padding: 0;
   }
 }
