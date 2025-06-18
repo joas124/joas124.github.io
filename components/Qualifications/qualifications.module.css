@@ -3,9 +3,6 @@
   flex-direction: column;
   align-self: flex-start;
   padding-left: 1.5rem;
-  border-right: solid;
-  border-color: #278AD2;
-  border-width: 0.1rem;
   min-height: 100%;
   height: 100%;
 }
@@ -48,13 +45,13 @@
 
 }
 
-.socials{
+.socials {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   align-self: center;
   font-size: 1.3rem;
-  padding: 0 1rem 0 0 ;
+  margin: 1rem 1rem 1rem 0;
 }
 
 .icon{

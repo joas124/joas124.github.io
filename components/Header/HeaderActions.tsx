@@ -54,10 +54,6 @@ export default function HeaderActions({ translations, locale }: { translations: 
 
   return (
     <div className={styles.buttons}>
-      <button className={styles.print} onClick={() => window.print()}>
-        {translations['print']}
-        <Image src='./icons/printer.svg' width={30} height={30} alt='Printer Icon' />
-      </button>
       <select className={styles.langSelect} name='language' value={locale} onChange={handleLanguageChange}>
         <option value='en'>English</option>
         <option value='pt'>Português</option>

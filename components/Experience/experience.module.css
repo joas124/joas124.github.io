@@ -1,8 +1,15 @@
 .history {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 100%;
+}
+
+.experienceTitle{
+  margin: 0;
+}
+
+.experienceDate{
+  margin: 0 0 0.8rem 0;
 }
 
 .study{
@@ -52,4 +59,40 @@
 .study a:hover{
   text-decoration: none;
   color: #9127a9;
+}
+
+.study ul {
+  padding: 0 0 0 1.2rem;
+}
+
+.study ul li{
+  margin: 0 0 0.5rem 0;
+}
+
+@media only screen and (max-aspect-ratio: 1), (max-width: 650px){
+  .history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .experienceTitle, .experienceDate{
+    text-align: center;
+  }
+
+  .study{
+    padding: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .study ul{
+    padding: 0 0 0 0.5rem;
+    gap: 5rem;
+    width: 100%;
+  }
 }

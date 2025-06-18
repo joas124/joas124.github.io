@@ -78,7 +78,7 @@ body.dark-mode{
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin: 0 0 3rem 0;
+  margin: 0 0 1.5rem 0;
   text-align: center;
   width: 80%;
 }
@@ -100,6 +100,15 @@ body.dark-mode .github{
   content: url('/icons/github-mark.svg');
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 /* Force background graphics to stay on when printing */
 * {

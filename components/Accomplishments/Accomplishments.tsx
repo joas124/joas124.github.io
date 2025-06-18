@@ -5,12 +5,12 @@ import styles from './accomplishments.module.css';
 
 export default function Accomplishments({ translations }: { translations: Record<string, string> }) {
   const experience = [
-    {img: '/images/Logo_MEO.png', imgClass: 'logo-rounded', imgAlt: 'Logo of MEO, a portuguese telecommunication company', imgWidth: 768, imgHeight: 768, title: translations['meoTitle'], description: translations['meoInfo']},
-    {img: '/images/redlight.png', imgClass: 'logo', imgAlt: 'Logo of the RedLight Software company', imgWidth: 1578, imgHeight: 1578, title: translations['redlightTitle'], description: translations['redlightInfo']},
+    {img: '/images/Logo_MEO.png', imgClass: 'logo-rounded', imgAlt: 'Logo of MEO, a portuguese telecommunication company', imgWidth: 768, imgHeight: 768, title: translations['meoTitle'], date: translations['meoDate'], description: translations['meoInfo']},
+    {img: '/images/redlight.png', imgClass: 'logo', imgAlt: 'Logo of the RedLight Software company', imgWidth: 1578, imgHeight: 1578, title: translations['redlightTitle'], date: translations['meoDate'], description: translations['redlightInfo']},
   ];
 
   const education = [
-    {img: '/images/FCTUC_V_FundoClaro.png', imgClass: 'logo', imgAlt: 'Logo of the University of Coimbra', imgWidth: 1666, imgHeight: 1670, title: translations['degreeTitle'], description: translations['degreeInfo']},
+    {img: '/images/FCTUC_V_FundoClaro.png', imgClass: 'logo', imgAlt: 'Logo of the University of Coimbra', imgWidth: 1666, imgHeight: 1670, title: translations['degreeTitle'], date: translations['degreeDate'], description: translations['degreeInfo']},
   ];
 
   const certificates = [
